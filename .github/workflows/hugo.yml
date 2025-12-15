@@ -30,7 +30,8 @@ jobs:
         with:
           hugo-version: "latest"
           extended: true
-       # ===============================
+
+      # ===============================
       # 新增：Setup Node.js
       # ===============================
       - name: Setup Node.js
@@ -44,6 +45,10 @@ jobs:
       - name: Install Tailwind CSS
         run: |
           npm install tailwindcss@4.1.18
+
+      # ===============================
+      # Hugo Build
+      # ===============================
       - name: Build
         run: hugo --minify
 
